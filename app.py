@@ -16,7 +16,3 @@ def read_root():
 def read_item(item_id:int,q:Union[str,None]=None):
     return {"item_id":item_id,"q":q}
 
-@app.post("/item/{item_id}")
-def create_item(item_id:int,q:Union[str,None]=None):
-    return {"item_id":item_id,"q":q}
-
